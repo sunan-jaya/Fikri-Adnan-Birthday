@@ -342,7 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
             May this new year of your life be filled with incredible adventures, meaningful moments, and all the happiness you deserve!<br><br>
             
             Love.. forever,<br>
-            Center of the universe, Sunan 💖
+            Center of the universe, 💖
         `;
         
         // First clear the existing content
