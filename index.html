@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Fikri Adnan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+    <!-- Loading screen -->
+    <div id="loading-screen" class="fullscreen">
+        <div class="loader-container">
+            <div class="loader-progress">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="loader-text">Loading... <span id="progress-text">0</span>%</div>
+        </div>
+    </div>
+    
+    <!-- Initial loading screen -->
+    <div id="start-screen" class="fullscreen">
+        <div class="start-content">
+            <div class="glowing-circle"></div>
+            <h1 class="animate__animated animate__pulse animate__infinite">Hi, Fikri :3</h1>
+            <button id="open-btn" class="btn primary-btn animate__animated animate__heartBeat animate__infinite">OPEN HERE</button>
+        </div>
+        <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+    </div>
+
+    <!-- Birthday celebration screen -->
+    <div id="birthday-screen" class="fullscreen hidden">
+        <div class="confetti-container"></div>
+        <div class="balloons-container">
+            <div class="balloon" style="--balloon-color: rgba(255, 0, 0, 0.8)"></div>
+            <div class="balloon" style="--balloon-color: rgba(0, 255, 255, 0.8)"></div>
+            <div class="balloon" style="--balloon-color: rgba(255, 255, 0, 0.8)"></div>
+            <div class="balloon" style="--balloon-color: rgba(255, 0, 255, 0.8)"></div>
+            <div class="balloon" style="--balloon-color: rgba(0, 255, 0, 0.8)"></div>
+        </div>
+        
+        <div id="birthday-content">
+            <h1 class="birthday-title animate__animated">Happy Birthday</h1>
+            <h2 class="birthday-name animate__animated">Andi Fikri Adnan</h2>
+            <div class="cake">
+                <div class="plate"></div>
+                <div class="cake-bottom"></div>
+                <div class="cake-middle"></div>
+                <div class="cake-top"></div>
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+            </div>
+            <button id="message-btn" class="btn second-btn animate__animated">I wrote you a message, please open!</button>
+        </div>
+        
+        <audio id="birthday-song" loop>
+            <source src="birthday-song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <div class="music-controls">
+            <button id="music-toggle" class="music-btn">
+                <span class="music-icon">🔊</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Final message popup -->
+    <div id="message-overlay" class="hidden">
+        <div id="message-popup">
+            <div class="close-btn">&times;</div>
+            <div class="sparkles"></div>
+            <div class="message-content">
+                <h2 class="message-title">Special Message</h2>
+                <p class="message-text"></p>
+                <div class="heart-container">
+                    <div class="heart"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
